@@ -1,39 +1,46 @@
 from collections import defaultdict
 
-class Graph:
-  def __init__(self):
+class Graph():
+
+  def __init__(self, verices):
     self.graph = defaultdict(list)
+    self.V = verices
 
   def addEdge(self, u, v):
     self.graph[u].append(v)
 
-  def checkCycleUtil(self, v, visited, path):
-    path.append(v)
+  def isCyclicUtil(self, v, visited, pathStack):
     visited[v] = True
+    pathStack[v] = True
+    if v not in self.graph.keys():
+      return False
     for adj in self.graph[v]:
-      if visited[adj]:
-        if adj in path:
-          return False
-      else:
-        noCycle = self.checkCycleUtil(adj, visited, path)
-        if not noCycle:
-          return False
-    path.pop(v)
-    return True
+      if pathStack[adj]:
+        return True
+      if not visited[adj]:
+        if self.isCyclicUtil(adj, visited, pathStack):
+          return True
+    pathStack[v] = False
+    return False
 
-  def checkCycle(self, src):
-    visited = [False] * (len(self.graph))
-    path = []
-    return self.checkCycleUtil(src, visited, path)
+  def isCyclic(self):
+    visited = [False] * self.V
+    for v in self.graph:
+      pathStack = [False] * self.V
+      if not visited[v]:
+        if self.isCyclicUtil(v, visited, pathStack):
+          return True
+    return False
 
-g = Graph()
+g = Graph(5)
 g.addEdge(0, 1)
 g.addEdge(0, 2)
-g.addEdge(1, 3)
-# g.addEdge(1, 2)
-# g.addEdge(2, 0)
-# g.addEdge(2, 3)
-# g.addEdge(3, 3)
+g.addEdge(3, 4)
+g.addEdge(4, 0)
 
-print ('Following is Depth First Traversal (starting from vertex 2) to check for cycle')
-print (g.checkCycle(0))
+
+
+if g.isCyclic():
+  print("Graph has a cycle")
+else:
+  print("Graph has no cycle")
