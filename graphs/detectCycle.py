@@ -26,6 +26,7 @@ class Graph():
   def isCyclic(self):
     visited = [False] * self.V
     for v in self.graph:
+      print(v, visited[v])
       pathStack = [False] * self.V
       if not visited[v]:
         if self.isCyclicUtil(v, visited, pathStack):
