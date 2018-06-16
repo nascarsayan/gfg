@@ -1,5 +1,4 @@
 def reverseList(self):
-  # Code here
   if self.head is None:
     return None
   prevNode = self.head
@@ -14,17 +13,6 @@ def reverseList(self):
     currNode = nextNode
 
   self.lastNode.next = None
-
-  # rlis = Linked_List()
-  # rlis.insert(self.head.data)
-  # currNode = self.head.next
-  # while currNode != None:
-  #   new_node = node(currNode)
-  #   new_node.next = rlis.head
-  #   rlis.head = new_node
-  #   currNode = currNode.next
-  # self.head = rlis.head
-  # self.lastNode = rlis.lastNode
 
 # Node Class
 class node:
