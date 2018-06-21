@@ -6,6 +6,7 @@ def chocoDist(arr, n, m):
       minIdx = idx
   return sArr[minIdx] - sArr[minIdx - m + 1]
 
+
 t = int(input())
 for et in range(t):
   n = int(input())

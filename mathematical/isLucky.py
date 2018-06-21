@@ -1,11 +1,12 @@
 def isLucky(n, div):
-  while(True):
+  while (True):
     if n % div == 0:
       return False
     if n < div:
       return True
     n -= int(n / div)
     div += 1
+
 
 n = int(input())
 if isLucky(n, 2):

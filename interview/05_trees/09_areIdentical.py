@@ -11,14 +11,18 @@ def isIdentical(root1, root2):
     return False
   return True
 
+
 class Node:
   def __init__(self, val):
     self.right = None
     self.data = val
     self.left = None
+
+
 class Tree:
   def createNode(self, data):
     return Node(data)
+
   def insert(self, node, data, ch):
     if node is None:
       return self.createNode(data)
@@ -28,41 +32,44 @@ class Tree:
     else:
       node.right = self.insert(node.right, data, ch)
       return node.right
+
   def search(self, lis, data):
     # if root is None or root is the search data.
     for i in lis:
       if i.data == data:
         return i
+
+
 # Driver Program
-if __name__=='__main__':
+if __name__ == '__main__':
   t = int(input())
   for i in range(t):
     n = int(input())
     arr = input().strip().split()
     tree = Tree()
-    lis=[]
+    lis = []
     root1 = None
     root1 = tree.insert(root1, int(arr[0]), 'L')
     lis.append(root1)
-    k=0
+    k = 0
     for j in range(n):
       ptr = None
       ptr = tree.search(lis, int(arr[k]))
-      lis.append(tree.insert(ptr, int(arr[k+1]), arr[k+2]))
-      k+=3
+      lis.append(tree.insert(ptr, int(arr[k + 1]), arr[k + 2]))
+      k += 3
     n = int(input())
     arr = input().strip().split()
     tree = Tree()
-    lis=[]
+    lis = []
     root2 = None
     root2 = tree.insert(root2, int(arr[0]), 'L')
     lis.append(root2)
-    k=0
+    k = 0
     for j in range(n):
       ptr = None
       ptr = tree.search(lis, int(arr[k]))
-      lis.append(tree.insert(ptr, int(arr[k+1]), arr[k+2]))
-      k+=3
+      lis.append(tree.insert(ptr, int(arr[k + 1]), arr[k + 2]))
+      k += 3
     if isIdentical(root1, root2):
       print(1)
     else:

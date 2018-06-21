@@ -14,11 +14,13 @@ def reverseList(self):
 
   self.lastNode.next = None
 
+
 # Node Class
 class node:
   def __init__(self, val):
     self.data = val
     self.next = None
+
 
 # Linked List Class
 
@@ -41,6 +43,7 @@ class Linked_List:
     for i in range(n):
       self.insert(arr[i])
     return self.head
+
   reverse_List = reverseList
 
   def printList(self):
@@ -49,6 +52,7 @@ class Linked_List:
       print(tmp.data, end=" ")
       tmp = tmp.next
     print()
+
 
 if __name__ == '__main__':
   t = int(input())

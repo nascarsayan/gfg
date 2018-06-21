@@ -23,36 +23,43 @@ def isPalindrome(head):
     cnt -= 1
   return True
 
-# Node Class  
+
+# Node Class
 class node:
   def __init__(self, val):
     self.data = val
     self.next = None
-    
+
+
 # Linked List Class
 class Linked_List:
   def __init__(self):
     self.head = None
+
   def insert(self, val):
     if self.head == None:
       self.head = node(val)
     else:
       new_node = node(val)
       temp = self.head
-      while(temp.next):
-        temp=temp.next
+      while (temp.next):
+        temp = temp.next
       temp.next = new_node
+
   def createList(self, arr, n):
     for i in range(n):
       self.insert(arr[i])
     return self.head
+
   def printList(self):
     tmp = self.head
     while tmp is not None:
       print(tmp.data, end=" ")
-      tmp=tmp.next
+      tmp = tmp.next
     print()
-if __name__=='__main__':
+
+
+if __name__ == '__main__':
   t = int(input())
   for i in range(t):
     n = int(input())

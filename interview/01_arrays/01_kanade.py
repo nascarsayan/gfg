@@ -14,6 +14,7 @@ def kanade(arr):
         maxFin = earr
   return maxFin
 
+
 t = int(input())
 for et in range(t):
   n = int(input())

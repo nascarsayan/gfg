@@ -1,6 +1,7 @@
 def toString(l):
   return ''.join(l)
 
+
 def printPermutation(a, l, r):
   if l == r:
     print(toString(a))
@@ -9,6 +10,7 @@ def printPermutation(a, l, r):
       a[l], a[i] = a[i], a[l]
       printPermutation(a, l + 1, r)
       a[l], a[i] = a[i], a[l]
+
 
 aStr = input()
 a = list(aStr)

@@ -13,10 +13,12 @@ def rotateList(head, k):
   currNode.next = head
   return newHead
 
+
 class Node:
   def __init__(self, data):
     self.data = data
     self.next = None
+
 
 class LinkedList:
   def __init__(self):
@@ -29,15 +31,16 @@ class LinkedList:
 
   def printList(self):
     temp = self.head
-    while(temp):
+    while (temp):
       print(temp.data, end=" ")
       temp = temp.next
     print("")
 
+
 if __name__ == '__main__':
   start = LinkedList()
   t = int(input())
-  while(t > 0):
+  while (t > 0):
     llist = LinkedList()
     n = int(input())
     values = list(map(int, input().strip().split()))

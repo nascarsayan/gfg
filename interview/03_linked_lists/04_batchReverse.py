@@ -11,6 +11,7 @@ def batchRev(start, k):
   start.next = currNode
   return prevNode, start
 
+
 def reverse(head, k):
   if k < 2 or head.next == None:
     return head
@@ -20,6 +21,7 @@ def reverse(head, k):
     tail.next = nextHead
     tail = newTail
   return newHead
+
 
 class Node:
   def __init__(self, data):

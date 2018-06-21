@@ -1,8 +1,10 @@
 class MyE(Exception):
-    pass
+  pass
+
 
 def isValid(idx, dim):
   return idx[0] >= 0 and idx[0] < dim[0] and idx[1] >= 0 and idx[1] < dim[1]
+
 
 def allRotten(arr, dim):
   for i in range(dim[0]):
@@ -11,15 +13,16 @@ def allRotten(arr, dim):
         return False
   return True
 
+
 def getMinTime(arr, r, c):
-  dim = (r,c)
+  dim = (r, c)
   rotQue = []
   delim = (-1, -1)
   for i in range(r):
     for j in range(c):
       if arr[i][j] == 2:
         rotQue.append((i, j))
-    
+
   rotQue.append(delim)
   count = 0
   while rotQue:
@@ -48,6 +51,7 @@ def getMinTime(arr, r, c):
   if not allRotten(arr, dim):
     return -1
   return count
+
 
 t = int(input())
 for i in range(t):

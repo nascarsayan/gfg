@@ -6,8 +6,9 @@ def zigzag(arr, n):
     sgn *= -1
   return arr
 
+
 t = int(input())
 for et in range(t):
   n = int(input())
   arr = [int(x) for x in input().split()]
-  print(' '.join(map(str, zigzag(arr , n))))
+  print(' '.join(map(str, zigzag(arr, n))))

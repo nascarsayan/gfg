@@ -11,6 +11,7 @@ def getNextLarger(arr, n):
     nextLArr.append(arr[idx])
   return out
 
+
 t = int(input())
 for et in range(t):
   n = int(input())

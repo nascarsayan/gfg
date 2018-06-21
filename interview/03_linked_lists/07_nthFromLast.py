@@ -12,11 +12,13 @@ def getNthFromLast(head, n):
     cnt -= 1
   return ptr.data
 
+
 # Node Class
 class node:
   def __init__(self, val):
     self.data = val
     self.next = None
+
 
 # Linked List Class
 class Linked_List:
@@ -29,15 +31,17 @@ class Linked_List:
     else:
       new_node = node(val)
       temp = self.head
-      while(temp.next):
+      while (temp.next):
         temp = temp.next
       temp.next = new_node
+
 
 def createList(arr, n):
   lis = Linked_List()
   for i in range(n):
     lis.insert(arr[i])
   return lis.head
+
 
 if __name__ == '__main__':
   t = int(input())

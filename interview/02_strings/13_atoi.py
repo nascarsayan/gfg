@@ -7,8 +7,9 @@ def atoi(inp):
       if idx == l - 1 and inp[0] == '-':
         return -s
       return -1
-    s = int((asc - 48) * (10 ** idx)) + s
+    s = int((asc - 48) * (10**idx)) + s
   return s
+
 
 t = int(input())
 for i in range(t):

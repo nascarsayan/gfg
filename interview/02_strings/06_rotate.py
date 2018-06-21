@@ -10,6 +10,7 @@ def isRotate2(s1, s2):
       return 1
   return 0
 
+
 t = int(input())
 for et in range(t):
   s1 = input()

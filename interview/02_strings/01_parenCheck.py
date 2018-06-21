@@ -14,6 +14,7 @@ def checkBal(inp):
   else:
     return 'balanced'
 
+
 t = int(input())
 for et in range(t):
   inp = input()

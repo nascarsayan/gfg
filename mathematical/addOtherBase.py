@@ -1,11 +1,17 @@
-SYMMAP = list(chr(x) for x in range(ord('0'), ord('9') + 1 )) + list(chr(x) for x in range(ord('A'), ord('Z') + 1 ))
+SYMMAP = list(chr(x) for x in range(ord('0'),
+                                    ord('9') + 1)) + list(
+                                        chr(x)
+                                        for x in range(ord('A'),
+                                                       ord('Z') + 1))
+
 
 def toBaseX(n, b):
   nb = ''
-  while(n):
+  while (n):
     nb = SYMMAP[n % b] + nb
     n = int(n / b)
   return nb
+
 
 def toDeci(n, b):
   p = 1
@@ -14,6 +20,7 @@ def toDeci(n, b):
     s += (SYMMAP.index(sym)) * p
     p *= b
   return s
+
 
 x = input().upper()
 y = input().upper()

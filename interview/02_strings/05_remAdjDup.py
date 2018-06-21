@@ -20,6 +20,7 @@ def remAdjDup(inp):
   else:
     return remAdjDup(filInp)
 
+
 t = int(input())
 for et in range(t):
   inp = input()

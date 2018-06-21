@@ -17,10 +17,12 @@ def pairWiseSwap(head):
     currPtr = nextPair
   return newHead
 
+
 class Node:
   def __init__(self, data):
     self.data = data
     self.next = None
+
 
 class LinkedList:
   def __init__(self):
@@ -38,6 +40,7 @@ class LinkedList:
       # arr.append(str(temp.data))
       temp = temp.next
     print()
+
 
 if __name__ == '__main__':
   start = LinkedList()

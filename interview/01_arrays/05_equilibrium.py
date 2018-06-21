@@ -1,6 +1,6 @@
 def equilibrium(arr, n):
   s = sum(arr)
-  ls = - arr[-1]
+  ls = -arr[-1]
   rs = s
   ind = 0
   for ind in range(n):
@@ -12,6 +12,7 @@ def equilibrium(arr, n):
     return ind + 1
   else:
     return -1
+
 
 t = int(input())
 for et in range(t):

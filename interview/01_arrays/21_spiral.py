@@ -1,9 +1,11 @@
 side = 4
+
+
 def spiral(arr):
   path = []
   st = 0
   currSz = side
-  while(st < currSz):
+  while (st < currSz):
     for j in range(st, currSz):
       path.append(arr[st][j])
     for i in range(st + 1, currSz):
@@ -15,6 +17,7 @@ def spiral(arr):
     st += 1
     currSz -= 1
   return path
+
 
 t = int(input())
 for et in range(t):

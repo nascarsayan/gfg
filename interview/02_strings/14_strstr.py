@@ -15,6 +15,7 @@ def strstr(strg, substr):
       subPos = 0
   return -1
 
+
 n = int(input())
 for i in range(n):
   strg, substr = input().strip().split()

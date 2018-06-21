@@ -11,11 +11,14 @@ def LCA(root, a, b):
       return rRet
   return None
 
+
 class Node:
   def __init__(self, value):
     self.left = None
     self.data = value
     self.right = None
+
+
 def insert(root, node):
   if root is None:
     root = node
@@ -32,11 +35,15 @@ def insert(root, node):
         root.left = node
       else:
         insert(root.left, node)
+
+
 def traverseInorder(root):
   if root is not None:
     traverseInorder(root.left)
     print(root.data, end=" ")
     traverseInorder(root.right)
+
+
 if __name__ == '__main__':
   t = int(input())
   for i in range(t):
@@ -48,6 +55,6 @@ if __name__ == '__main__':
         root = Node(j)
       else:
         insert(root, Node(j))
-    a,b = list(map(int, input().strip().split()))
+    a, b = list(map(int, input().strip().split()))
     res = LCA(root, a, b)
     print(res.data)

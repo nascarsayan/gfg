@@ -5,6 +5,7 @@ def missing(arr):
     s -= earr
   return s
 
+
 t = int(input())
 for et in range(t):
   n = int(input())

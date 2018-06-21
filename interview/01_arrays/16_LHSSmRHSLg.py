@@ -9,6 +9,7 @@ def lhssrhsl(arr, n):
     lg = max(lg, arr[idx])
   return -1
 
+
 t = int(input())
 for et in range(t):
   n = int(input())

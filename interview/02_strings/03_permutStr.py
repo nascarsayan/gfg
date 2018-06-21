@@ -7,11 +7,13 @@ def printPer(inp, visited, perm, l):
       printPer(inp, visited, perm + inp[idx], l)
       visited[idx] = False
 
+
 def permut(inp):
   l = len(inp)
   visited = [False] * l
   printPer(inp, visited, '', l)
   print()
+
 
 t = int(input())
 for et in range(t):

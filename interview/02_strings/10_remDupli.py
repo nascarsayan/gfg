@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 def remDupli(inp):
   out = ''
   cnt = defaultdict(int)
@@ -8,6 +9,7 @@ def remDupli(inp):
       out += c
       cnt[c] += 1
   return out
+
 
 t = int(input())
 for et in range(t):

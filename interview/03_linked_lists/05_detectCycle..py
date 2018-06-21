@@ -12,6 +12,7 @@ def detectLoop(head):
       x2 = x2.next
   return False
 
+
 # Node class
 class Node:
   def __init__(self, data):
@@ -23,12 +24,14 @@ class LinkedList:
   # Function to initialize head
   def __init__(self):
     self.head = None
+
   # Function to insert a new node at the beginning
 
   def push(self, new_data):
     new_node = Node(new_data)
     new_node.next = self.head
     self.head = new_node
+
   # Utility function to prit the linked LinkedList
 
   def printList(self, node):

@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 def nonRep1(arr, n):
   visited = defaultdict(int)
   que = [arr[0]]
@@ -17,6 +19,7 @@ def nonRep1(arr, n):
     else:
       out.append('-1')
   return out
+
 
 t = int(input())
 for i in range(t):

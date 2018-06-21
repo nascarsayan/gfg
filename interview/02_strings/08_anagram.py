@@ -4,6 +4,7 @@ def areAnagrams(s1, s2):
   else:
     return 'NO'
 
+
 t = int(input())
 for et in range(t):
   s1 = input()

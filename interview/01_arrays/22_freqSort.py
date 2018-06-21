@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 def freqSort(arr, n):
   x = defaultdict(int)
   fi = []
@@ -12,6 +13,7 @@ def freqSort(arr, n):
   for e in fi:
     fo = fo + [e[0]] * e[1]
   return fo
+
 
 t = int(input())
 for et in range(t):

@@ -16,6 +16,7 @@ def longSubstr(s1, s2, l1, l2):
         maxLen = max(maxLen, dpSub[i][j])
   return maxLen
 
+
 t = int(input())
 for et in range(t):
   l1, l2 = [int(x) for x in input().strip().split()]

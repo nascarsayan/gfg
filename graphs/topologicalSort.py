@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 class Graph():
   def __init__(self, vertices):
     self.graph = defaultdict(list)
@@ -24,6 +25,7 @@ class Graph():
       if not visited[v]:
         self.topoSortUtil(v, visited, callStack)
     print(callStack)
+
 
 g = Graph(6)
 g.addEdge(5, 2)

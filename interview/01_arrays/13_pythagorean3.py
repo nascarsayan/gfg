@@ -3,7 +3,7 @@ def hasPyth3(arr, n):
   for c in range(n - 2):
     a = c + 1
     b = n - 1
-    while(a < b):
+    while (a < b):
       if sqArr[a] + sqArr[b] == sqArr[c]:
         return 'Yes'
       if sqArr[a] + sqArr[b] < sqArr[c]:
@@ -11,6 +11,7 @@ def hasPyth3(arr, n):
       else:
         a += 1
   return 'No'
+
 
 t = int(input())
 for et in range(t):

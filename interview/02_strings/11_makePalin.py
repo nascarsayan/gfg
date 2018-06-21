@@ -9,6 +9,7 @@ def getMinIns(inp):
         dp[i][j] = 1 + min(dp[i + 1][j - 1], dp[i][j - 1])
   return dp[0][l]
 
+
 t = int(input())
 for et in range(t):
   inp = input()

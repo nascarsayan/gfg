@@ -1,6 +1,8 @@
 from collections import defaultdict
+
+
 def getMaxDistSub(inp):
-  visited = defaultdict(lambda:-1)
+  visited = defaultdict(lambda: -1)
   visited[inp[0]] = 0
   cLen = 1
   maxLen = 1
@@ -13,6 +15,7 @@ def getMaxDistSub(inp):
     visited[inp[idx]] = idx
   maxLen = max(maxLen, cLen)
   return maxLen
+
 
 t = int(input())
 for et in range(t):

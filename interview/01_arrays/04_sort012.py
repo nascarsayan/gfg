@@ -8,6 +8,7 @@ def sort012(arr, n):
       n1 += 1
   print(' '.join(['0'] * n0 + ['1'] * n1 + ['2'] * (n - n0 - n1)))
 
+
 t = int(input())
 for et in range(t):
   n = int(input())

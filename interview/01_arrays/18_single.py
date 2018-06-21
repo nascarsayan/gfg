@@ -21,6 +21,7 @@ def findSingle(arr, n):
         r = m - 1
   return arr[0]
 
+
 t = int(input())
 for et in range(t):
   n = int(input())

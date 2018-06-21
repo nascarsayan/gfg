@@ -15,6 +15,7 @@ def getTransact(arr, n):
     ts.append([x, i - 1])
   return ts
 
+
 def maxProfit(arr, n):
   trans = getTransact(arr, n)
   if len(trans) == 0:
@@ -23,6 +24,7 @@ def maxProfit(arr, n):
     for t in trans:
       print('(%d %d)' % (t[0], t[1]), end=' ')
     print('')
+
 
 t = int(input())
 for et in range(t):

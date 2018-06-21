@@ -16,6 +16,7 @@ def check3(n):
     n = n >> 1
   return check3(oc - ec)
 
+
 n = int(input())
 if check3(n):
   print('%d is Multiple of 3' % n)

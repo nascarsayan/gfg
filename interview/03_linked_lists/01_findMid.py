@@ -4,6 +4,7 @@ class node:
     self.data = val
     self.next = None
 
+
 # Linked List Class
 class Linked_List:
   def __init__(self):
@@ -15,15 +16,17 @@ class Linked_List:
     else:
       new_node = node(val)
       temp = self.head
-      while(temp.next):
+      while (temp.next):
         temp = temp.next
       temp.next = new_node
+
 
 def createList(arr, n):
   lis = Linked_List()
   for i in range(n):
     lis.insert(arr[i])
   return lis.head
+
 
 def findMid(head):
   j1 = head
@@ -34,6 +37,7 @@ def findMid(head):
     if j2.next != None:
       j2 = j2.next
   return j1
+
 
 if __name__ == '__main__':
   t = int(input())

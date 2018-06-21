@@ -19,7 +19,8 @@ def getLongPal(inp):
         dpPal[idx][k - 1] = True
         st = idx
         sz = k
-  return inp[st : st + sz]
+  return inp[st:st + sz]
+
 
 t = int(input())
 for et in range(t):

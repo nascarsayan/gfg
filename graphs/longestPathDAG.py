@@ -3,6 +3,8 @@ from collections import defaultdict
 # For the first time, using the adjacency matrix as graph representation
 # '''
 INF = float('-inf')
+
+
 class Graph():
   def __init__(self, vertices):
     self.V = vertices
@@ -38,6 +40,7 @@ class Graph():
           if dist[adj[0]] < dist[v] + adj[1]:
             dist[adj[0]] = dist[v] + adj[1]
     print(dist)
+
 
 g = Graph(6)
 g.addEdge(0, 1, 5)
