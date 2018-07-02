@@ -16,6 +16,7 @@ def uncommonChar(s1, s2):
       ret += c
   return ret
 
+
 t = int(input())
 for i in range(t):
   s1 = input()

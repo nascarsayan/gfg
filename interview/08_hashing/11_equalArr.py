@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 def areEqual(arr1, arr2):
   cnt = defaultdict(int)
   for e in arr1:
@@ -10,6 +11,7 @@ def areEqual(arr1, arr2):
     if cnt[k] != 0:
       return 0
   return 1
+
 
 t = int(input())
 for i in range(t):

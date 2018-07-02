@@ -14,6 +14,7 @@ def canBeEqualSum(arr1, arr2, n1, n2):
       i2 += 1
   return -1
 
+
 t = int(input())
 for i in range(t):
   n1, n2 = list(map(int, input().strip().split()))

@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 def changeCnt(windowCnt, nd, val, inc):
   windowCnt[val] += inc
   if windowCnt[val] >= 1 and windowCnt[val] - inc == 0:

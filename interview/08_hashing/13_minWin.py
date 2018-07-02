@@ -30,6 +30,7 @@ def minWinLen(s1, s2, l1, l2):
     return '-1'
   return ret
 
+
 t = int(input())
 for i in range(t):
   s1 = input()

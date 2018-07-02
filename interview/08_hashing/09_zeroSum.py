@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 def getNumArr(arr, n):
   currS = defaultdict(int)
   s = 0

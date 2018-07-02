@@ -4,6 +4,7 @@ def minIdxChar(s1, s2):
       return es1
   return 'No character present'
 
+
 t = int(input())
 for i in range(t):
   s1 = input()

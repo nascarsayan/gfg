@@ -11,6 +11,7 @@ def getMaxLen(arr, n):
   ml = max(ml, l)
   return ml
 
+
 def getMaxLenHash(arr, n):
   ml = 1
   for idx in range(n):
@@ -22,6 +23,7 @@ def getMaxLenHash(arr, n):
         v += 1
       ml = max(ml, l)
   return ml
+
 
 t = int(input())
 for i in range(t):

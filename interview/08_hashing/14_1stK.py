@@ -12,6 +12,7 @@ def get1stK(arr, n, k):
       return earr
   return -1
 
+
 t = int(input())
 for i in range(t):
   n, k = list(map(int, input().strip().split()))

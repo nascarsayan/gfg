@@ -5,6 +5,7 @@ def getPairs(arr1, arr2, n1, n2, s):
       pArr.append((e1, s - e1))
   return pArr
 
+
 t = int(input())
 for i in range(t):
   n1, n2, s = list(map(int, input().strip().split()))

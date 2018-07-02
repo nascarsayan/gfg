@@ -6,6 +6,7 @@ def isSubset(arr1, arr2, n1, n2):
       return 'No'
   return 'Yes'
 
+
 t = int(input())
 for i in range(t):
   n1, n2 = list(map(int, input().strip().split()))
