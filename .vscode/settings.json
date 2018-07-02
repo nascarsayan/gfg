@@ -9,4 +9,5 @@
     "**/.DS_Store": true
   },
   "python.formatting.provider": "yapf",
+  "code-runner.customCommand": "python3 $fullFileName < inp",
 }
